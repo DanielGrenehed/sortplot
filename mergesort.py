@@ -12,7 +12,7 @@ def isSorted(a):
     return all(a[i] <= a[i+1] for i in range(n-1))
 
 def mergeSort(array):
-    if len(array) == 1:
+    if len(array) <= 1:
         return
 
     middle = len(array)//2
