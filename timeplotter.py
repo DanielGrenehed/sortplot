@@ -26,7 +26,6 @@ def plotSort(sortFunc=None, funcName="DefaultSort"):
     atime= []
     nel = []
     n = 10
-    # loop
     while n < 100000:
         array = [random.randint(0, 100000) for _ in range(n)]
         print(f"Sorting {len(array)} elements with {funcName}")  
@@ -51,16 +50,6 @@ def plotSort(sortFunc=None, funcName="DefaultSort"):
     plt.legend()
     plt.savefig(funcName+".png")
     plt.close()
-    """
-        sort unsorted
-        sort sorted
-        sort reversed sorted
-        sort almost sorted
-
-        plot order( time(y), array_size(x))
-        Save to file (funcname.png)        
-    """
-    pass
 
 if __name__ == "__main__" :
     sys.setrecursionlimit(1000000)
