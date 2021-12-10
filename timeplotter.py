@@ -1,12 +1,8 @@
 import matplotlib.pyplot as plt
-from bubblesort import BubbleSort
-from quicksort import QuickSort
-from gnomesort import GnomeSort
 from timsort import TimSort
 from mergesort import mergeSort
 from heapsort import HeapSort
 from almostsort import almostSorted
-import time
 import random
 import sys
 import timeit
@@ -56,9 +52,6 @@ def plotSort(sortFunc=None, funcName="DefaultSort"):
     plt.plot(nel, reversed_time, label="reversed", marker="o")
     plt.plot(nel, almost_time, label="almost", marker="o")
     plt.xscale('log', base=2)
-    #plt.xticks(nel, nel)
-    #plt.yscale('log')
-    #plt.plot(nel, atime, label="almost")
     plt.xlabel("Array Size")
     plt.ylabel("Time (s)")
     plt.title(funcName)
@@ -79,7 +72,6 @@ if __name__ == "__main__" :
     plt.plot(nel, ts, label="TimSort", marker="o")
     plt.plot(nel, ds, label="DefaultSort", marker="o")
     plt.xscale('log', base=2)
-    #plt.xticks(nel, nel)
 
     plt.xlabel("Array Size")
     plt.ylabel("Time (s)")
