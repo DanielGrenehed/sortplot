@@ -2,17 +2,13 @@
 
 def partition(list, lo, hi):
     pivot = list[hi]
-    i=lo -1
+    i = lo-1
     for j in range(lo, hi):
         if list[j] <= pivot:
             i += 1
-            tmp = list[i]
-            list[i] = list[j]
-            list[j] = tmp
+            list[i], list[j] = list[j], list[i]
     i+=1
-    tmp = list[i]
-    list[i] = list[hi]
-    list[hi] = tmp
+    list[i], list[j] = list[j], list[i]
     return i
 
 def QuickSort(list, lo=0, hi=None):
