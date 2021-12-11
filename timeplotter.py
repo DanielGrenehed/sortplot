@@ -25,8 +25,8 @@ def plotSort(sortFunc=None, funcName="DefaultSort"):
     reversed_time= []
     almost_time= []
     nel = []
-    n = 1024
-    while n <= 1048576 * 8:
+    n = 1024 * 8
+    while n <= 1048576 * 16:
         array = [random.randint(0, 100000) for _ in range(n)]
         print(f"Sorting {len(array)} elements with {funcName}")  
         unsorted_time.append(timeSort(array.copy(), sortFunc))
