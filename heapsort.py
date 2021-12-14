@@ -1,3 +1,11 @@
+"""
+    HeapSort
+    Worst-case      O(n log n)
+    Best-case       O(n log n)
+    Averaged-case   O(n log n)
+
+"""
+
 
 def Heapify(array, n, i):
     largest = i

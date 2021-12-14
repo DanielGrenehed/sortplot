@@ -1,5 +1,11 @@
+""" 
+    TimSort
+    Worst-case      O(n log n)
+    Best-case       O(n)
+    Average-case    O(n log n)
+"""
 
-MIN_MERGE = 32
+MIN_MERGE = 64
 
 def calcMinRun(n):
     r=0
