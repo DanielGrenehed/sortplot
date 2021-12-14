@@ -45,7 +45,16 @@ def EnrichPerformanceData(perfs, start, end):
 
 if __name__ == "__main__" :
     sys.setrecursionlimit(1000000)
-
-    perfs = CreatePerformanceData()
-    perfs = EnrichPerformanceData(perfs, pow(2, 13), pow(2, 24))
-    PlotPerfs(perfs)
+    if len(sys.argv) > 2:
+        try:
+            start = int(sys.argv[1])
+            end = int(sys.argv[2])
+            perfs = CreatePerformanceData()
+            perfs = EnrichPerformanceData(perfs, pow(2, start), pow(2, end))
+            PlotPerfs(perfs)
+        except :
+            print("Invalid arguments")
+    else:
+        perfs = CreatePerformanceData()
+        perfs = EnrichPerformanceData(perfs, pow(2, 13), pow(2, 24))
+        PlotPerfs(perfs)
