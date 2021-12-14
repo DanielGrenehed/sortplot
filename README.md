@@ -21,6 +21,6 @@ If the graph directory is missing, the program may terminate without saving the 
 Running the this program will overwrite the plot images already in the graphs folder!
 
 ## About
-Latest version avaliable on [GitHub]()
+Latest version avaliable on [GitHub](https://github.com/DanielGrenehed/sortplot)
 
 by Martin Piqueras & Daniel Grenehed
