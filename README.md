@@ -16,8 +16,7 @@ To run with custom start and end values for array size:
 python3 main.py 8 14
 ```
 this will run from array size 2^8 to 2^14 (inclusive).
-
-If the graph directory is missing, the program may terminate without saving the plots to files, so make sure to create the dir if missing.   
+   
 Running the this program will overwrite the plot images already in the graphs folder!
 
 ## About
